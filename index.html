@@ -21,21 +21,19 @@
                    <div class=" grid grid-rows-4">
                       <div class=" mt-8">
                         <h4 class="text-2xl mb-1">Memory</h4>
-                        <button class="border-2 rounded px-2">8GB unified memory</button>
-                        <button class="border-2 rounded px-2">16GB unified memory</button>
+                        <button id="memory-8" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">8GB unified memory</button>
+                        <button id="memory-16" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">16GB unified memory</button>
                       </div>
-
                       <div>
                         <h4 class="text-2xl mb-1">Storage</h4>
-                        <button class="border-2 rounded px-2">256GB SSD storage</button>
-                        <button class="border-2 rounded px-2">512GB SSD storage</button>
-                        <button class="border-2 rounded px-2">1TB SSD storage</button>
+                        <button id="storage-256" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">256GB SSD storage</button>
+                        <button id="storage-512" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">512GB SSD storage</button>
+                        <button id="storage-1tb" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">1TB SSD storage</button>
                       </div>
-
                       <div>
                         <h4 class="text-2xl mb-1">Choose your delivery</h4>
-                        <button class="border-2 rounded px-2">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="border-2 rounded px-2">Friday, Aug 21 Delivery Charge $20</button>
+                        <button id="delivery-free" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="delivery-20" class="border-2 border-gray-400 rounded px-2 hover:bg-gray-400">Friday, Aug 21 Delivery Charge $20</button>
                       </div>
 
                       <div class="grid grid-row-5">
@@ -49,10 +47,10 @@
                           </div><hr>
                           <div class="grid grid-cols-2">
                             <div>
-                                <h4 class="text-2xl mb-1">Extra Money Cost</h4>
+                                <h4 class="text-2xl mb-1">Extra Memory Cost</h4>
                             </div>
                             <div>
-                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                                <h4 class="text-2xl mb-1">$<span id="extra-memory">0</span></h4>
                             </div>
                           </div><hr>
                           <div class="grid grid-cols-2">
@@ -60,7 +58,7 @@
                                 <h4 class="text-2xl mb-1">Extra Storage Cost</h4>
                             </div>
                             <div>
-                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                                <h4 class="text-2xl mb-1">$<span id="extra-storage">0</span></h4>
                             </div>
                           </div><hr>
                           <div class="grid grid-cols-2">
@@ -68,15 +66,15 @@
                                 <h4 class="text-2xl mb-1">Delivery charge</h4>
                             </div>
                             <div>
-                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                                <h4 class="text-2xl mb-1">$<span id="extra-charge">0</span></h4>
                             </div>
-                          </div><hr class="border-2">
+                          </div><hr class="border border-gray-900">
                           <div class="grid grid-cols-2">
                             <div>
                                 <h4 class="text-2xl mb-1">Total Price</h4>
                             </div>
                             <div>
-                                <h4 class="text-2xl mb-1">$<span>1299</span></h4>
+                                <h4 class="text-2xl mb-1">$<span id="total-price">1299</span></h4>
                             </div>
                           </div>
                           <div>
@@ -94,5 +92,6 @@
         </div>
     </section>
    </main>
+   <script src="price.js"></script>
 </body>
 </html>
