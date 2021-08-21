@@ -8,6 +8,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
+   <main>
     <section>
         <div>
             <div class="grid grid-cols-2 gap-14 m-10">
@@ -15,38 +16,83 @@
                   <img src="images/mac.png" alt="" srcset="">
                </div>
                <div>
-                   <h1 class="text-5xl">Customize your black 24-inch iMac with Appple M1 chip</h1><br>
+                   <h1 class="text-4xl font-semibold mb-3">Customize your black 24-inch iMac with Appple M1 chip</h1>
                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, amet? Error illum ullam temporibus molestiae, minus voluptate rem ducimus. Animi Error illum ullam temporibus molestiae, minus voluptate rem ducimus. Animi</p>
-                   <div class=" grid grid-rows-4 mt-8">
+                   <div class=" grid grid-rows-4">
+                      <div class=" mt-8">
+                        <h4 class="text-2xl mb-1">Memory</h4>
+                        <button class="border-2 rounded px-2">8GB unified memory</button>
+                        <button class="border-2 rounded px-2">16GB unified memory</button>
+                      </div>
+
                       <div>
-                        <h4 class="text-2xl">Memory</h4>
-                        <input class="border-2 rounded" type="text">
-                        <input class="border-2 rounded" type="text">
+                        <h4 class="text-2xl mb-1">Storage</h4>
+                        <button class="border-2 rounded px-2">256GB SSD storage</button>
+                        <button class="border-2 rounded px-2">512GB SSD storage</button>
+                        <button class="border-2 rounded px-2">1TB SSD storage</button>
                       </div>
-                      <div class="mt-5">
-                        <h4 class="text-2xl">Storage</h4>
-                        <input class="border-2 rounded" type="text">
-                        <input class="border-2 rounded" type="text">
-                        <input class="border-2 rounded" type="text">
-                      </div>
-                      <div class="mt-8">
-                        <h4 class="text-2xl">Choose your delivery</h4>
-                        <input class="border-2 rounded" type="text">
-                        <input class="border-2 rounded" type="text">
-                      </div>
+
                       <div>
-                          <ul>
-                              <li>Best Price</li>
-                              <li>Extra Money Cost</li>
-                              <li>Extra Storage Cost</li>
-                              <li>Delivery charge</li>
-                              <li>Total Price</li>
-                          </ul>
+                        <h4 class="text-2xl mb-1">Choose your delivery</h4>
+                        <button class="border-2 rounded px-2">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button class="border-2 rounded px-2">Friday, Aug 21 Delivery Charge $20</button>
+                      </div>
+
+                      <div class="grid grid-row-5">
+                          <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-2xl mb-1">Best Price</h4>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl mb-1">$<span>1299</span></h4>
+                            </div>
+                          </div><hr>
+                          <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-2xl mb-1">Extra Money Cost</h4>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                            </div>
+                          </div><hr>
+                          <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-2xl mb-1">Extra Storage Cost</h4>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                            </div>
+                          </div><hr>
+                          <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-2xl mb-1">Delivery charge</h4>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl mb-1">$<span>0</span></h4>
+                            </div>
+                          </div><hr class="border-2">
+                          <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-2xl mb-1">Total Price</h4>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl mb-1">$<span>1299</span></h4>
+                            </div>
+                          </div>
+                          <div>
+                            <h4 class="lg mt-4">Add Promo Code</h4>
+                            <input class="border-2 rounded" type="text">
+                            <button class="border-1 rounded px-2 py-0.5 bg-red-600 text-white" type="submit">Apply</button>
+                          </div>
                       </div>
                    </div>
                </div>
+            </div><hr>
+            <div>
+                <h1 class="flex justify-center text-3xl font-semibold mb-3">Total: $<span>1299</span></h1> 
             </div>
         </div>
     </section>
+   </main>
 </body>
 </html>
