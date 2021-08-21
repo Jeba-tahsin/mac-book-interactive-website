@@ -1,9 +1,3 @@
-const extramemory = document.getElementById('extra-memory');
-const extrastorage = document.getElementById('extra-storage');
-const extracharge = document.getElementById('extra-charge');
-//total
-const totalprice = document.getElementById('total-price');
-
 //memory 
 document.getElementById('memory-8').addEventListener('click',function(){
     macBook(0, extramemory);
@@ -31,9 +25,18 @@ document.getElementById('delivery-20').addEventListener('click',function(){
     macBook(20, extracharge);
 })
 
-function macBook(price,initialCost){
-   const initialPrice = price;
-   initialCost.innerText = initialPrice;
+const extramemory = document.getElementById('extra-memory');
+const extrastorage = document.getElementById('extra-storage');
+const extracharge = document.getElementById('extra-charge');
+const totalprice = document.getElementById('total-price');
+const promoPrice = document.getElementById('promo-price');
+const inputPromo = document.getElementById('input-promo');
+const promoButton = document.getElementById('promo-button');
+
+
+function macBook(price,initCost){
+   const initPrice = price;
+   initCost.innerText = initPrice;
    totalPrice();
 }
 function totalPrice(){
@@ -43,4 +46,17 @@ function totalPrice(){
     const deliveryCost = extracharge.innerText;
     const totalPrice = bestPrice + parseInt(memoryCost) + parseInt(storageCost) + parseInt(deliveryCost);
     totalprice.innerText = totalPrice;
+    promoPrice.innerText = totalPrice;
 }
+promoButton.addEventListener('click',function(){
+    const promoText = inputPromo.value;
+    const withoutDiscount = totalprice.innerText;
+    if(promoText == 'stevekaku'){
+        const discountPrice = parseInt(withoutDiscount)*0.20;
+        const totalDiscountPrice = parseInt(withoutDiscount) - discountPrice;
+        promoPrice.innerText = totalDiscountPrice;
+    }
+    else{
+        alert('your promo code is not correct! please try again')
+    }
+})
